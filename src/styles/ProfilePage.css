@@ -1,0 +1,111 @@
+i.fas {
+    color: black;
+}
+
+.userprofile-para{
+    margin: 0;
+}
+Link{
+    display: inline-block;
+    width: 100%;
+}
+.userprofile-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5px 20px 5px;
+    background-color: rgb(245, 245, 191);
+}
+.profilepage-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #04345C;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.profilepage-header h3{
+    color: #FFFAE0;
+}
+.location{
+    font-size: 12px;
+}
+.location .fas{
+    font-size: 14px;
+}
+.userprofile-name{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.profile_picture{
+    width: 15%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.account-links a{
+    margin: 5px;
+}
+.account-links .fab{
+    font-size: 24px;
+}
+.github-repo{
+    margin: auto 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding-bottom: 20px;
+}
+
+/*Repositories file css starts from here*/
+
+.repo-name-description{
+    margin: 10px 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+
+@media screen and (max-width: 562px){
+    .profile_picture{
+        width: 30%;
+    }
+    .userprofile-name{
+        font-size: 16px;
+    }
+    .userprofile-para{
+        font-size: 14px;
+    }
+    .github-repo{
+        font-size: 20px;
+    }
+    .repo-name-description{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 362px){
+    .profilepage-header h3{
+        font-size: 14px;
+    }
+    .link-homepage h3{
+        font-size: 14px;
+    }
+    .profile_picture{
+        width: 70%;
+    }
+    .userprofile-name{
+        font-size: 15px;
+    }
+    .userprofile-para{
+        font-size: 13px;
+    }
+    .account-links .fab{
+        font-size: 18px;
+    }
+    .github-repo{
+        font-size: 18px;
+    }
+    .repo-name-description{
+        font-size: 12px;
+    }
+}

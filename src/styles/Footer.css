@@ -1,0 +1,19 @@
+.footer{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 10px 8px 10px 8px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(131, 97, 170);
+}
+
+.footer p{
+    color: aquamarine;
+    font-size: 12px;
+}
+
+.social-media-links{
+    color: aquamarine;
+    margin-right: 10px;
+}

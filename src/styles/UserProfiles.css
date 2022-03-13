@@ -1,0 +1,23 @@
+.profile-link-names{
+    display: flex;
+    flex-direction: row;
+}
+.git-id {
+    font-size: 20px;
+    display: block;
+}
+.link-to-profile{
+    color: rgb(81, 81, 238);
+    text-decoration: none;
+}
+.delete-user button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 722px){
+    .git-id{
+        font-size: 13px;
+    }
+}
