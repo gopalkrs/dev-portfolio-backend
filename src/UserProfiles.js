@@ -22,7 +22,7 @@ function UserProfiles({gitUsername}){
                 <Link className='link-to-profile' to = {`/${githubId}`}> {githubId}</Link> 
             </h3>
             <div className='delete-user'>
-                <button onClick={deleteUserHandler}><FontAwesomeIcon icon={faDeleteLeft} /> </button>
+                <button onClick={deleteUserHandler}><FontAwesomeIcon icon={faDeleteLeft} color="red" /> </button>
             </div>
         </div> 
     );

@@ -7,7 +7,7 @@
     display: block;
 }
 .link-to-profile{
-    color: rgb(81, 81, 238);
+    color: #000;
     text-decoration: none;
 }
 .delete-user button{
