@@ -54,7 +54,7 @@ function ProfilePage(props) {
             <div>
                 {
                     repositories?.map((repo) => (
-                        <Repositories name={repo.name} description={repo.description} url={repo.clone_url} />
+                        <Repositories name={repo.name} description={repo.description} key={repo.name} url={repo.clone_url} />
                     ))
                 }
             </div>

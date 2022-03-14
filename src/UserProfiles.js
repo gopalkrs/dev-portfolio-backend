@@ -8,8 +8,10 @@ import { faAddressCard, faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 
 function UserProfiles({gitUsername}){
 
+    const githubId = gitUsername.toLowerCase();
+
     const deleteUserHandler= async()=>{
-        const promise = await axios.delete(`/api/users/${gitUsername}`);
+        const promise = await axios.delete(`/api/users/${githubId}`);
         console.log(promise);
     }
 
@@ -17,7 +19,7 @@ function UserProfiles({gitUsername}){
         <div className='profile-link-names'>
             <h3 className="git-id">
                 <FontAwesomeIcon icon={faAddressCard} />
-                <Link className='link-to-profile' to = {`/${gitUsername}`}> {gitUsername}</Link> 
+                <Link className='link-to-profile' to = {`/${githubId}`}> {githubId}</Link> 
             </h3>
             <div className='delete-user'>
                 <button onClick={deleteUserHandler}><FontAwesomeIcon icon={faDeleteLeft} /> </button>

@@ -19,7 +19,7 @@ function Section() {
             setInputData(data);
             console.log(inputData);
         });
-    },[]);
+    },[inputData]);
 
     const addClick = (e) => {
         setStyles({
@@ -41,7 +41,7 @@ function Section() {
             </div>
             <div className="user-profiles">
                 {inputData?.map((input) => (
-                    <UserProfiles gitUsername={input.login} />
+                    <UserProfiles gitUsername={input.login} key={input.login} />
                 ))}
             </div>
             <div>

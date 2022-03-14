@@ -17,6 +17,14 @@ function Form({ styles, setStyles}){
             visibility: "hidden",
             opacity:"0"
         });
+        setFormData({
+            githubId: "",
+            linkedinId: "",
+            twitterId: "",
+            mediumId: "",
+            hackerrankId: "",
+            instagramId: ""
+        });
     }
 
     const handleChange=(e)=>{
