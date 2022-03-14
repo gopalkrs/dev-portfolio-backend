@@ -17,7 +17,6 @@ function Section() {
         .then((response)=>response.json())
         .then((data)=>{
             setInputData(data);
-            console.log(inputData);
         });
     },[inputData]);
 

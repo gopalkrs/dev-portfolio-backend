@@ -8,8 +8,8 @@ const postUser = (req, res, next) => {
     const Id = arr[arr.length - 1];
     const gitId = Id.toLowerCase();
     try {
-        let gitPromise = axios(`https://api.github.com/users/${gitId}`);
-        let repoPromise = axios(`https://api.github.com/users/${gitId}/repos`);
+        let gitPromise = axios.get(`https://api.github.com/users/${gitId}`);
+        let repoPromise = axios.get(`https://api.github.com/users/${gitId}/repos`);
 
         Promise.all([gitPromise, repoPromise])
             .then((responses) => {
@@ -34,8 +34,12 @@ const postUser = (req, res, next) => {
 
             })
             .catch(console.log("Wrong Username received."));
-    } catch (err) {
+    }catch(err) {
         console.log(err);
+        return res.status(401).json({
+            status: "Failure",
+            message: "Invalid User."
+        });
     }
 };
 
